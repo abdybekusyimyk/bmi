@@ -18,10 +18,10 @@ class ichkiWidget extends StatelessWidget {
           icon,
           size: 70,
         ),
-        SizedBox(height: 15),
+        const SizedBox(height: 15),
         Text(
           text,
-          style: TextStyle(fontSize: 30),
+          style: const TextStyle(fontSize: 30),
         )
       ]),
     );

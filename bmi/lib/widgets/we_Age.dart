@@ -24,27 +24,27 @@ class weight_age extends StatelessWidget {
         children: [
           Text(
             Aty,
-            style: TextStyle(fontSize: 30),
+            style: const TextStyle(fontSize: 30),
           ),
           Text(
             agetext,
-            style: TextStyle(fontSize: 40),
+            style: const TextStyle(fontSize: 40),
           ),
           Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    fixedSize: Size(60, 60),
-                    shape: CircleBorder(),
-                    primary: Color.fromARGB(255, 102, 91, 187)),
+                    fixedSize: const Size(60, 60),
+                    shape: const CircleBorder(),
+                    primary: const Color.fromARGB(255, 102, 91, 187)),
                 onPressed: minus,
-                child: FaIcon(FontAwesomeIcons.minus)),
+                child: const FaIcon(FontAwesomeIcons.minus)),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    fixedSize: Size(60, 60),
-                    shape: CircleBorder(),
-                    primary: Color.fromARGB(255, 102, 91, 187)),
+                    fixedSize: const Size(60, 60),
+                    shape: const CircleBorder(),
+                    primary: const Color.fromARGB(255, 102, 91, 187)),
                 onPressed: plus,
-                child: FaIcon(FontAwesomeIcons.plus))
+                child: const FaIcon(FontAwesomeIcons.plus))
           ])
         ],
       ),

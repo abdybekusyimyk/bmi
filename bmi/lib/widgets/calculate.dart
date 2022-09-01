@@ -15,11 +15,11 @@ class BET extends StatelessWidget {
       children: [
         Text(
           BmiBrain.getResult(result),
-          style: TextStyle(fontSize: 20, color: Colors.green),
+          style: const TextStyle(fontSize: 20, color: Colors.green),
         ),
         Text(
           result.toStringAsFixed(1),
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 70,
           ),
         ),
