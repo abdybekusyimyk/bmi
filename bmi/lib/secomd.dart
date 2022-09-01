@@ -24,11 +24,11 @@ class _EkichiBetState extends State<EkichiBet> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Жыйынтык',
               style: TextStyle(fontSize: 30),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -52,7 +52,7 @@ class _EkichiBetState extends State<EkichiBet> {
           width: 100,
           height: 100,
           color: Color.fromARGB(255, 139, 51, 22),
-          child: Center(
+          child: const Center(
             child: Text(
               'Кайра эсепте',
               style: TextStyle(fontSize: 30),

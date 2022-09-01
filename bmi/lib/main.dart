@@ -42,8 +42,8 @@ class _MyHomeAppState extends State<MyHomeApp> {
   int age = 20;
   int weight = 60;
 
-  Color selected = Color.fromARGB(95, 13, 198, 23);
-  Color upselected = Color.fromARGB(95, 127, 120, 120);
+  Color selected = const Color.fromARGB(95, 13, 198, 23);
+  Color upselected = const Color.fromARGB(95, 127, 120, 120);
   Gender gender = Gender.NONE;
   // bool male = false;
   // bool female = false;
@@ -51,7 +51,7 @@ class _MyHomeAppState extends State<MyHomeApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'BMI Canculator',
           style: TextStyle(color: Colors.white, fontSize: 26),
         ),
@@ -80,7 +80,7 @@ class _MyHomeAppState extends State<MyHomeApp> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               ButtonWidget(
@@ -108,7 +108,7 @@ class _MyHomeAppState extends State<MyHomeApp> {
             ),
             child: ButtonWidget(
               ichwidged: Column(children: [
-                Text(
+                const Text(
                   "HEIGHT",
                   style: TextStyle(fontSize: 30),
                 ),
@@ -119,9 +119,9 @@ class _MyHomeAppState extends State<MyHomeApp> {
                   children: [
                     Text(
                       numnomer.toStringAsFixed(0),
-                      style: TextStyle(fontSize: 60),
+                      style: const TextStyle(fontSize: 60),
                     ),
-                    Text(
+                    const Text(
                       'cm',
                       style: TextStyle(fontSize: 25),
                     ),
@@ -131,8 +131,8 @@ class _MyHomeAppState extends State<MyHomeApp> {
                     value: numnomer.toDouble(),
                     min: 0,
                     max: 220,
-                    activeColor: Color.fromARGB(255, 184, 221, 227),
-                    inactiveColor: Color.fromARGB(20, 244, 244, 244),
+                    activeColor: const Color.fromARGB(255, 184, 221, 227),
+                    inactiveColor: const Color.fromARGB(20, 244, 244, 244),
                     onChanged: (double ozcan) {
                       setState(() {
                         numnomer = ozcan;
@@ -161,7 +161,7 @@ class _MyHomeAppState extends State<MyHomeApp> {
                     },
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 ButtonWidget(
@@ -194,7 +194,7 @@ class _MyHomeAppState extends State<MyHomeApp> {
             "Эсепте",
             style: TextStyle(fontSize: 30),
           ),
-          color: Color.fromARGB(255, 139, 51, 22),
+          color: const Color.fromARGB(255, 139, 51, 22),
           height: MediaQuery.of(context).size.height * 0.1,
           width: double.infinity,
           alignment: Alignment.center,
